@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script> 
+</head>
+<body>
+
+
+<main class="main-grid">
+
+     <div class="game-msg">
+        <h1 class="game-msg__para">Rock, Paper, Sissors, Shoot! 💥 </h1>
+    </div>
+
+
+    <h2 id="game-msg__hidden" style="color:#d9d9d9; grid-area: message; 
+    text-shadow: -1px 5px 7px #092f50; font-size: 2rem; text-align: center;"></h2>
+
+    <div class="rock">
+        <!-- Create a function on click -->
+        <button type="button" class=" btns rock__btn"><a href="#game-msg__hidden"> 🪨</a> </button>
+        <!-- [0] -->
+        <p> Rock! </p>
+
+
+    </div>
+
+
+    <div class="paper">
+        <!-- [1] -->
+        <button type="button" class="btns paper__btn"><a href="#game-msg__hidden"> 📄 </a> </button>
+        <p> Paper! </p>
+
+    </div>
+
+    <div class="scissors">
+        <button type="button" class=" btns scissors__btn"> <a href="#game-msg__hidden"> ✂️ </a> </button>
+        <!-- [2] -->
+        <p> Scissors!</p>
+
+    </div>
+
+    <div class="counter">
+    <p class="player">Player:<label id="player-score"> 0</label></p>
+    <p class="pc">Computer:<label id="pc-score"> 0</label></p>
+    <button id="reset-btn" type="button" href="#"><a>Reset</a></button>
+    </div>
+    </main>
+
+
+
+
+</body>
+</html>
